@@ -6,16 +6,10 @@ lst1 = list_1.split()
 lst2 = list_2.split()
 first_mn = []
 second_mn = []
-i = 0
-j = 0
-while i < n:
-    first_mn.append(lst1[i])
-    i += 1
-print(first_mn)
-while j < m:
-    second_mn.append(lst2[j])
-    j += 1
-print(second_mn)
+for i in lst1:
+    first_mn.append(i)
+for i in lst2:
+    second_mn.append(i)
 fst = set(first_mn)
 scnd = set(second_mn)
 out_mn = fst.intersection(scnd)
