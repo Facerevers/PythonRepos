@@ -7,10 +7,10 @@
 находясь перед некоторым кустом заданной во входном файле грядки."""
 
 lst = [1, 2, 3, 4]
-n = 1
+n = 2
 if n == len(lst):
     summ = lst[n - 2] + lst[n - 1] + lst[0]
-elif n == len(lst) + 1:
+elif n == 1:
     summ = lst[len(lst) - 1] + lst[0] + lst[n]
 else:
     summ = lst[n - 2] + lst[n - 1] + lst[n]
